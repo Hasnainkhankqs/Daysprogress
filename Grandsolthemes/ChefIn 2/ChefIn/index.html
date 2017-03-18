@@ -1,0 +1,901 @@
+<html>
+
+
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+<style>
+
+.slider h1{ font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+   
+    margin: 0 0 15px;
+    font-weight: 400;     -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px; }
+
+.slider{  margin-top:250px; text-align:center;  color: #ffffff;}
+
+.slider p{ margin:10px 0px; font-size:16px; -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;}
+	
+	
+	.para{ 
+    text-align:center;
+    padding: 21px 0; 
+    background-color: #fcfbf9;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    color: #414551;}
+
+
+.search{ line-height: 55px;
+    height: 55px; float:left; margin-left:36%;
+    padding: 0 50px; 
+	color:#000;
+    border: none;
+    background-color: #f2f1f3;}
+
+.submit{ background-color:#1cde73;
+  float:left;
+    height: 55px;
+    line-height: 55px;
+    border: none;
+    display: block;
+    padding: 0 30px 0 30px;
+    
+    color: #ffffff;
+    cursor: pointer;
+    transition:  0.3s; /*By Hasnain */
+    }
+
+/*Edited by Hasnain start*/
+.submit:hover{
+    background-color: #e8500e;
+}
+/*Edited by Hasnain end*/
+
+@media only screen and (max-width: 786px) {
+   
+
+.slider{  margin-top:150px; }
+
+.search{  
+       margin-left:5%; width:90%; float:left;
+    }
+.submit{  
+        margin-left:5%; width:90%; float:left; margin-bottom:30px;
+    }
+	
+	#sa{ margin-left:0px !important;}
+
+.price{     font-size: 15px !important;}
+	
+}
+
+
+.head1{ font-size: 42px;
+font-family: 'Roboto Slab', serif;
+font-weight: 400;
+text-align: center; color: #414551;
+margin: 0 0 10px;
+ padding: 60px 0 10px;} 
+
+.para2{ font-size: 16px;
+text-align: center;
+font-weight: 400;
+ color: #748796;}
+ 
+ .data{ background-repeat: no-repeat;
+
+   border-radius: 3px 3px 0 0; margin-bottom:30px;
+}
+
+.heading{ color: #414551;
+font-weight: 400;
+font-size: 26px; position: relative;
+padding: 25px 20px 5px 20px;
+
+margin: 0; font-family: 'Roboto Slab', serif;}
+
+.dataenter{ position: relative;
+border: 1px solid #ededed; 
+border-top: none;}
+
+
+.heading2{ padding: 0 20px; color: #748796; font-size:15px;}
+
+
+.price{ color: #000000;
+font-size: 21px; 
+font-weight: 700;
+text-transform: uppercase; padding: 15px 20px 20px;  }
+
+.addcart{ line-height: 36px;
+height: 40px;
+font-size: 14px;
+background-color: transparent;
+border-radius: 3px;
+border: 2px dashed #e8500e;
+padding: 0 15px;
+display: inline-block;
+text-align: center; 
+color: #e8500e; float:right;
+font-weight: 300;  margin:-60px 30px 0px 0px ;
+box-sizing: border-box;     
+}
+
+.addcart:hover{
+background-color: #14ca66;
+border: none;
+color: #ffffff;
+}
+
+.datafooter{ padding: 10px 20px;
+border: 1px solid #ededed;
+border-top: none;
+position: relative;}
+
+
+.like{ position: absolute;
+right: 0;
+top: 0; padding:30px 10px 20px 10px ;
+bottom: 0;
+border-left: 1px solid #ededed;
+width: 25%;}
+
+
+.logocom{ width: 50px;
+height: 45px;
+margin-right: 10px;
+border-radius: 3px; }
+
+.headcom{ color: #414551; font-size:16px;
+font-weight: 400; margin-bottom:0px;
+display: inline-block;
+max-width: 55%;}
+
+
+.data2{ background-color: #fcfbf9;
+border: 1px solid #ededed; border-right:20px solid white;
+border-radius: 3px; 
+margin-bottom: 30px;
+overflow: hidden;
+display: table; padding: 15px 15px;
+}
+/*Edited by Hasnain start*/
+.data2:hover{
+    background-color: #ededed;
+}
+/*Edited by Hasnain start*/
+.data2 img{     border-radius: 3px;
+    border: 1px solid #ededed;
+    background-size: cover;
+    box-sizing: border-box;}
+	
+	.head3{    color: #414551;
+font-weight: 400;
+font-size: 22px; position: relative;
+padding: 0px 20px 5px 120px;
+ letter-spacing:1;
+}
+
+.footerp{ padding: 2px 0; color:rgba(251,251,251,0.4);}
+/*Edited by Hasnain start*/
+.footerp:hover{
+    cursor: pointer;
+text-decoration: underline;
+}
+/*Edited by Hasnain end*/
+.footerh{ color: #ffffff; margin-bottom:15px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 25px;}
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+<!--top-->
+<div class="top" style="background:url(img/slider.jpg);   background-size:cover; ">
+
+<div class="main" style="background:rgba(0,0,0,0.3); width:100%; height:100%;"> 
+
+
+<!--nav-->
+<div class="nav">
+
+
+
+
+
+<nav class="navbar nn navbar-default navbar-fixed-top" style="background:rgba(0,0,0,0.0);transition: 0.3s; font-size:20px; color:white; padding-bottom:20px; border:0px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed navc"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><img src="img/LOGO.png" style="width:70%;"/></a>
+    </div>
+
+    <div class="collapse navbar-collapse navv" id="bs-example-navbar-collapse-1" style="border:0px;">
+      <ul class="nav navbar-nav pull-right" style="padding-top:30px; margin-right:30px; ">
+          				
+                        <li><i class="fa fa-question-circle-o"></i> Help</li>
+                        <li style="margin-left:20px;" id="sa"><i class="fa fa-user-o"></i> Login or Sign Up</li>
+                        
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--nav-->
+
+<!--slider-->
+
+<div class="slider">
+
+<h1>Order Delivery & Take-Out</h1>
+<p>Find restaurants, specials, and coupons for free</p>
+
+<input type="text" class="search" placeholder="What is your location ?"/>
+
+
+
+<input type="submit" class="submit" value="Search" id="sbmt"/>
+
+
+
+</div>
+
+<center>
+<img src="img/steps.png" style="margin-top:155px;" class="img-responsive"  />
+
+</center>
+
+<!--slider-->
+
+</div>
+
+</div>
+
+<!--top-->
+
+<!--content-->
+
+
+
+<p class="para">356 restaurants matched your location: New York -<a href="" style="color:#e8500e;"> Change Address</a></p>
+
+<h2 class="head1">Popular This Month In Your City</h2>
+
+<p class="para2">The easiest way to your favourite food</p>
+
+<div class="container" style="margin-top:70px;">
+
+
+<div class="row">
+
+
+
+
+
+<!--data-->
+<div class="col-md-4 data" >
+
+<img src="img/one.jpg" style="width:100%;  "/>
+
+<div class="dataenter">
+<h1 class="heading">Hendrerit nisi venenatis</h1>
+
+<h2 class="heading2">Mauris interdum diam lorem.</h2>
+
+<p class="price">$10.00 - $30.00</p>
+
+
+<p class="addcart">Add to Cart</p>
+
+
+</div>
+
+
+<div class="datafooter">
+
+<img src="img/icon.jpg" class="logocom"/>
+
+<p class="headcom">Fabio al porto ristorante</p>
+
+
+<p class="para2" style="text-align:left; margin-left:60px; margin-top:-10px;">68 5th Avenue New York </p>
+ 
+ <div class="like"><span class="glyphicon glyphicon-heart" style="font-size:25px; color:#e8500e;"> <span style="font-size:20px; float:right; margin-left:10px; color: #748796;"> 23</span></span></div>
+ 
+ 
+</div>
+
+</div>
+
+<!--data-->
+
+
+
+
+<!--data-->
+<div class="col-md-4 data" >
+
+<img src="img/two.jpg" style="width:100%; "/>
+
+<div class="dataenter">
+<h1 class="heading">Hendrerit nisi venenatis</h1>
+
+<h2 class="heading2">Mauris interdum diam lorem.</h2>
+
+<p class="price">$10.00 - $30.00</p>
+
+
+<p class="addcart">Add to Cart</p>
+
+
+</div>
+
+
+<div class="datafooter">
+
+<img src="img/icon.jpg" class="logocom"/>
+
+<p class="headcom">Fabio al porto ristorante</p>
+
+
+<p class="para2" style="text-align:left; margin-left:60px; margin-top:-10px;">68 5th Avenue New York </p>
+ 
+ <div class="like"><span class="glyphicon glyphicon-heart" style="font-size:25px; color:#e8500e;"> <span style="font-size:20px; float:right; margin-left:10px; color: #748796;"> 23</span></span></div>
+ 
+ 
+</div>
+
+</div>
+
+<!--data-->
+
+
+
+
+
+<!--data-->
+<div class="col-md-4 data" >
+
+<img src="img/three.jpg" style="width:100%;  "/>
+
+<div class="dataenter">
+<h1 class="heading">Hendrerit nisi venenatis</h1>
+
+<h2 class="heading2">Mauris interdum diam lorem.</h2>
+
+<p class="price">$10.00 - $30.00</p>
+
+
+<p class="addcart">Add to Cart</p>
+
+
+</div>
+
+
+<div class="datafooter">
+
+<img src="img/icon.jpg" class="logocom"/>
+
+<p class="headcom">Fabio al porto ristorante</p>
+
+
+<p class="para2" style="text-align:left; margin-left:60px; margin-top:-10px;">68 5th Avenue New York </p>
+ 
+ <div class="like"><span class="glyphicon glyphicon-heart" style="font-size:25px; color:#e8500e;"> <span style="font-size:20px; float:right; margin-left:10px; color: #748796;"> 23</span></span></div>
+ 
+ 
+</div>
+
+</div>
+
+<!--data-->
+
+
+
+
+</div>
+
+</div>
+
+
+
+<img src="img/co.jpg" style="width:100%;" class="img-responsive"/>
+
+<!--data2-->
+
+<div class="container" style="margin-top:20px;">
+
+
+<h1 class="head1" style=" text-align:left; font-size:30px; width:100%;">Featured restaurants</h1>
+
+<div class="row">
+
+
+<!--data-->
+<div class="col-md-6 data2">
+
+<img src="img/com.jpg"  style="float:left;" class="img-responsive"/>
+
+<h1 class="head3"> Central caffe pizzeria</h1>
+
+<h2 class="heading2" style="padding-left:120px;">Burgers, American, Sandwiches, Fast Food, BBQ, Breakfast</h2>
+
+<h2 class="heading2" style="padding-left:120px; margin-top:0px; font-size:13px;">68 5th Avenue New York <span class="glyphicon glyphicon-star" style="color:#e8500e; "></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span></h2>
+
+
+</div>
+
+<!--data-->
+
+
+<!--data-->
+<div class="col-md-6 data2">
+
+<img src="img/com.jpg"  style="float:left;" class="img-responsive"/>
+
+<h1 class="head3"> Central caffe pizzeria</h1>
+
+<h2 class="heading2" style="padding-left:120px;">Burgers, American, Sandwiches, Fast Food, BBQ, Breakfast</h2>
+
+<h2 class="heading2" style="padding-left:120px; margin-top:0px; font-size:13px;">68 5th Avenue New York <span class="glyphicon glyphicon-star" style="color:#e8500e; "></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span></h2>
+
+
+</div>
+
+<!--data-->
+
+
+<!--data-->
+<div class="col-md-6 data2">
+
+<img src="img/com.jpg"  style="float:left;" class="img-responsive"/>
+
+<h1 class="head3"> Central caffe pizzeria</h1>
+
+<h2 class="heading2" style="padding-left:120px;">Burgers, American, Sandwiches, Fast Food, BBQ, Breakfast</h2>
+
+<h2 class="heading2" style="padding-left:120px; margin-top:0px; font-size:13px;">68 5th Avenue New York <span class="glyphicon glyphicon-star" style="color:#e8500e; "></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span></h2>
+
+
+</div>
+
+<!--data-->
+
+
+
+<!--data-->
+<div class="col-md-6 data2">
+
+<img src="img/com.jpg"  style="float:left;" class="img-responsive"/>
+
+<h1 class="head3"> Central caffe pizzeria</h1>
+
+<h2 class="heading2" style="padding-left:120px;">Burgers, American, Sandwiches, Fast Food, BBQ, Breakfast</h2>
+
+<h2 class="heading2" style="padding-left:120px; margin-top:0px; font-size:13px;">68 5th Avenue New York <span class="glyphicon glyphicon-star" style="color:#e8500e; "></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span></h2>
+
+
+</div>
+
+<!--data-->
+
+
+
+<!--data-->
+<div class="col-md-6 data2">
+
+<img src="img/com.jpg"  style="float:left;" class="img-responsive"/>
+
+<h1 class="head3"> Central caffe pizzeria</h1>
+
+<h2 class="heading2" style="padding-left:120px;">Burgers, American, Sandwiches, Fast Food, BBQ, Breakfast</h2>
+
+<h2 class="heading2" style="padding-left:120px; margin-top:0px; font-size:13px;">68 5th Avenue New York <span class="glyphicon glyphicon-star" style="color:#e8500e; "></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span></h2>
+
+
+</div>
+
+<!--data-->
+
+
+
+<!--data-->
+<div class="col-md-6 data2">
+
+<img src="img/com.jpg"  style="float:left;" class="img-responsive"/>
+
+<h1 class="head3"> Central caffe pizzeria</h1>
+
+<h2 class="heading2" style="padding-left:120px;">Burgers, American, Sandwiches, Fast Food, BBQ, Breakfast</h2>
+
+<h2 class="heading2" style="padding-left:120px; margin-top:0px; font-size:13px;">68 5th Avenue New York <span class="glyphicon glyphicon-star" style="color:#e8500e; "></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span> <span class="glyphicon glyphicon-star" style="color:#e8500e;"></span></h2>
+
+
+</div>
+
+<!--data-->
+
+
+
+
+</div>
+
+
+</div>
+
+<!--data2-->
+
+<!--content-->
+
+
+
+
+
+<!--footer-->
+
+
+<div class="container-fluid" style="background:url(img/fa.jpg); color:#ccc; padding:50px 0px 50px 0px; ">
+
+<div class="container footer">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<img src="img/logo.png" class="img-responsive" style="width:100px;"/>
+
+<p class="footerp" style="margin-top:20px;">Order Delivery & Take-Out</p>
+
+</div>
+
+
+
+<div class="col-md-2">
+
+
+<h3 class="footerh">About Us</h3>
+
+<p class="footerp">About us</p>
+
+
+<p class="footerp">History</p>
+
+
+
+<p class="footerp">Our Team</p>
+
+
+<p class="footerp">We are Hiring</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="col-md-2">
+
+
+<h3 class="footerh">How it Works</h3>
+
+<p class="footerp">Enter your location</p>
+
+
+<p class="footerp">Choose restaurant</p>
+
+
+
+<p class="footerp">
+Choose meal</p>
+
+
+<p class="footerp">
+Pay via credit card</p>
+
+
+
+<p class="footerp">
+
+Wait for delivery</p>
+
+</div>
+
+
+
+
+
+<div class="col-md-2">
+
+
+<h3 class="footerh">
+Pages</h3>
+
+<p class="footerp">
+Search results page</p>
+
+
+<p class="footerp">Choose restaurant</p>
+
+
+
+<p class="footerp">
+
+
+User Sing Up Page</p>
+
+
+<p class="footerp">
+
+Pricing page</p>
+
+
+
+<p class="footerp">
+
+
+
+Make order</p>
+
+
+
+
+<p class="footerp">
+
+
+
+
+Add to cart</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="col-md-2">
+
+
+<h3 class="footerh">
+
+
+locations</h3>
+
+<p class="footerp">
+Search results page</p>
+
+
+<p class="footerp">
+Sarajevo</p>
+
+
+
+
+
+
+
+<p class="footerp">
+
+
+
+Tuzla</p>
+
+
+<p class="footerp">
+
+Zagreb</p>
+
+
+
+<p class="footerp">
+
+
+
+Beograd</p>
+
+
+
+
+<p class="footerp">
+
+
+
+
+Gradacac</p>
+
+</div>
+
+
+
+
+
+
+<!--row-->
+
+
+</div>
+
+
+
+
+<div class="row" style="margin-top:60px;">
+
+
+
+
+
+<div class="col-md-3">
+
+
+
+<h3 class="footerh">
+
+Payment Options</h3>
+
+<img src="img/payment.png" class="img-responsive"/>
+
+</div>
+
+
+
+
+<div class="col-md-4">
+
+
+<h3 class="footerh">
+
+Address</h3>
+
+<p class="footerp">Concept design of oline food order and deliveye,planned as restaurant directory</p>
+
+<h3 class="footerh">Phone: <span>021 123456</span></h3>
+
+</div>
+
+
+
+<div class="col-md-5">
+
+
+<h3 class="footerh">
+
+Addition informations</h3>
+
+<p class="footerp">Join the thousands of other restaurants who benefit from having their menus on TakeOff</p>
+
+
+</div>
+
+
+
+<!--row-->
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<!--footer-->
+
+
+
+
+</body>
+
+
+<script src="js/jquery.js"></script>
+
+<script>
+
+
+$(window).scroll(function(){
+	
+	
+	if($(this).scrollTop()>100){
+		
+		
+		$('.nn').css('backgroundColor','rgba(0,0,0,1)');
+		
+		
+		}
+		
+		else{
+			
+		$('.nn').css('backgroundColor','rgba(0,0,0,0)');
+			
+			
+			}
+	
+	});
+	
+	var a=0;
+	
+	$('.navc').click(function(){
+		
+		
+		a++;
+		
+		
+		if(a==1){
+				$('.navv').slideDown();
+			
+			}
+		
+		
+		
+		if(a==2){
+			
+		$('.navv').slideUp();
+		
+		a=0;
+			
+			}
+		
+		
+	
+		
+		
+		});
+
+
+</script>
+
+
+
+</html>
